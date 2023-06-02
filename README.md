@@ -1,6 +1,8 @@
 # Constructing_KG_using_SpaCy
 A knowledge graph is a large semantic network. It consists of nodes that are entities such as persons, places, events, or companies, and edges that represent formalized relations between those nodes.
 This project aims to an overview of constructing a KG step by step. The pipeline of this project is shown below.
+
+
 ![KG](https://github.com/jangvu/Constructing_KG_using_SpaCy/assets/50269219/595b6895-2075-4afb-bf98-8be0739640d6)
 
 Step 1: Sentences Segmentation
@@ -19,8 +21,13 @@ Here, if the token is the object, then it will be captured as the second entity 
 Once we have captured the subject and the object in the sentence, we will update the previous token and its dependency tag.
 Step 3: Relation Extraction
 Many basic implementations of knowledge graphs make use of a concept we call triple, that is a set of three items(a subject, a predicate and an object) that we can use to store information about something. The triple is represented as 2 connected nodes.
+
+
 ![Relation drawio](https://github.com/jangvu/Constructing_KG_using_SpaCy/assets/50269219/01a505f0-8b8d-485b-b9b7-cf3822679b9d)
+
+
 A rule-based matching is used to extract the main verb of the sentence or predicate
 Step 4 Constructing KG
+
 ![image](https://github.com/jangvu/Constructing_KG_using_SpaCy/assets/50269219/2b5f319f-43a4-4b96-a99b-7b28fdf1952c)
 
